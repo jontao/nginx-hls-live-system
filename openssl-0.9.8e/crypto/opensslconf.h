@@ -65,8 +65,8 @@
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/usr/local/src/openssl-0.9.8e/.openssl/lib/engines"
-#define OPENSSLDIR "/usr/local/src/openssl-0.9.8e/.openssl/ssl"
+#define ENGINESDIR "/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl/lib/engines"
+#define OPENSSLDIR "/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl/ssl"
 #endif
 #endif
 

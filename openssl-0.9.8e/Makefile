@@ -13,8 +13,8 @@ SHLIB_MAJOR=0
 SHLIB_MINOR=9.8
 SHLIB_EXT=.so.$(SHLIB_MAJOR).$(SHLIB_MINOR)
 PLATFORM=linux-x86_64
-OPTIONS=--prefix=/usr/local/src/openssl-0.9.8e/.openssl no-camellia no-gmp no-krb5 no-mdc2 no-rc5 no-rfc3779 no-shared no-zlib no-zlib-dynamic
-CONFIGURE_ARGS=linux-x86_64 --prefix=/usr/local/src/openssl-0.9.8e/.openssl no-shared
+OPTIONS=--prefix=/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl no-camellia no-gmp no-krb5 no-mdc2 no-rc5 no-rfc3779 no-shared no-zlib no-zlib-dynamic
+CONFIGURE_ARGS=linux-x86_64 --prefix=/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl no-shared
 SHLIB_TARGET=linux-shared
 
 # HERE indicates where this Makefile lives.  This can be used to indicate
@@ -26,10 +26,10 @@ HERE=.
 # for, say, /usr/ and yet have everything installed to /tmp/somedir/usr/.
 # Normally it is left empty.
 INSTALL_PREFIX=
-INSTALLTOP=/usr/local/src/openssl-0.9.8e/.openssl
+INSTALLTOP=/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl
 
 # Do not edit this manually. Use Configure --openssldir=DIR do change this!
-OPENSSLDIR=/usr/local/src/openssl-0.9.8e/.openssl/ssl
+OPENSSLDIR=/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl/ssl
 
 # NO_IDEA - Define to build without the IDEA algorithm
 # NO_RC4  - Define to build without the RC4 algorithm

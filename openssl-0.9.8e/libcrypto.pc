@@ -1,4 +1,4 @@
-prefix=/usr/local/src/openssl-0.9.8e/.openssl
+prefix=/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
