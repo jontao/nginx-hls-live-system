@@ -6,7 +6,7 @@
 
 my $openssl;
 
-my $dir = "/usr/local/src/nginx-hls-live-system/openssl-0.9.8e/.openssl/ssl";
+my $dir = "/usr/local/ssl";
 
 if(defined $ENV{OPENSSL}) {
 	$openssl = $ENV{OPENSSL};
