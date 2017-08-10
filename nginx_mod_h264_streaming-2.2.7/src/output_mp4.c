@@ -370,7 +370,7 @@ static void trak_update_index(struct mp4_context_t const* mp4_context,
   {
     struct stss_t* stss = trak->mdia_->minf_->stbl_->stss_;
     unsigned int entries = 0;
-    unsigned int stss_start;
+   // unsigned int stss_start;
     unsigned int i;
 
     for(i = 0; i != stss->entries_; ++i)
@@ -378,7 +378,7 @@ static void trak_update_index(struct mp4_context_t const* mp4_context,
       if(stss->sample_numbers_[i] >= start + 1)
         break;
     }
-    stss_start = i;
+   // stss_start = i;
     for(; i != stss->entries_; ++i)
     {
       unsigned int sync_sample = stss->sample_numbers_[i];

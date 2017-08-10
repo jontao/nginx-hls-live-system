@@ -373,8 +373,8 @@ static int esds_read(mp4_context_t const* mp4_context,
   unsigned int tag;
   unsigned int len;
 
-  uint16_t stream_id;
-  unsigned int stream_priority;
+ // uint16_t stream_id;
+  //unsigned int stream_priority;
   unsigned int object_type_id;
   unsigned int stream_type;
   unsigned int buffer_size_db;
@@ -394,14 +394,14 @@ static int esds_read(mp4_context_t const* mp4_context,
   {
     len = mp4_read_desc_len(&buffer);
     MP4_INFO("Elementary Stream Descriptor: len=%u\n", len);
-    stream_id = read_16(buffer + 0);
-    stream_priority = read_8(buffer + 2);
+//    stream_id = read_16(buffer + 0);
+//    stream_priority = read_8(buffer + 2);
     buffer += 3;
   }
   else
   {
     MP4_INFO("Elementary Stream Descriptor: len=%u\n", 2);
-    stream_id = read_16(buffer + 0);
+//    stream_id = read_16(buffer + 0);
     buffer += 2;
   }
 
@@ -523,17 +523,17 @@ stsd_parse_vide(mp4_context_t const* mp4_context,
       {
         unsigned int sequence_parameter_sets;
         unsigned int picture_parameter_sets;
-        unsigned int configuration_version;
-        unsigned int profile_indication;
-        unsigned int profile_compatibility;
-        unsigned int level_indication;
+//        unsigned int configuration_version;
+//        unsigned int profile_indication;
+//        unsigned int profile_compatibility;
+//        unsigned int level_indication;
 
         sample_entry->codec_private_data_ = buffer;
 
-        configuration_version = read_8(buffer + 0);
-        profile_indication = read_8(buffer + 1);
-        profile_compatibility = read_8(buffer + 2);
-        level_indication = read_8(buffer + 3);
+//        configuration_version = read_8(buffer + 0);
+//        profile_indication = read_8(buffer + 1);
+//        profile_compatibility = read_8(buffer + 2);
+//        level_indication = read_8(buffer + 3);
 
         sample_entry->nal_unit_length_ = (read_8(buffer + 4) & 3) + 1;
         sequence_parameter_sets = read_8(buffer + 5) & 0x1f;

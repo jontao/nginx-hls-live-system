@@ -30,5 +30,6 @@ echo "cp config files nginx to /etc/"
 rm -rf /etc/nginx
 tar xf ../nginx.tar.bz2 -C /etc/
 cd ../
+adduser --system --no-create-home --disabled-password --user-group nginx
 exit
 
